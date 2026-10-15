@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fundamentals Homework - Mini Site Project</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #34495e;
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            padding-left: 0.5rem;
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .goal {
+            background-color: #e8f5e8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #27ae60;
+            margin: 1.5rem 0;
+        }
+        
+        .goal strong {
+            color: #27ae60;
+            font-size: 1.1rem;
+        }
+        
+        .what-you-build {
+            background-color: #fff3cd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #f39c12;
+            margin: 1.5rem 0;
+        }
+        
+        .pages-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .pages-list li {
+            background: #fff;
+            margin: 0.5rem 0;
+            padding: 0.75rem;
+            border-radius: 5px;
+            border-left: 3px solid #3498db;
+            font-family: 'Courier New', monospace;
+            background-color: #f8f9fa;
+        }
+        
+        .folder-structure {
+            background-color: #f0f8ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #3498db;
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .folder-structure pre {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+        
+        .requirements {
+            background-color: #e8f4f8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #2980b9;
+            margin: 2rem 0;
+        }
+        
+        .requirements ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+        
+        .requirements li {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        
+        .cascade-demo {
+            background-color: #fdf2f2;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #e74c3c;
+            margin: 1.5rem 0;
+        }
+        
+        .cascade-demo h3 {
+            color: #c0392b;
+            margin-top: 0;
+        }
+        
+        .priority-list {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        
+        .priority-list ol {
+            padding-left: 1.5rem;
+            margin: 0.5rem 0;
+        }
+        
+        .priority-list li {
+            margin-bottom: 0.25rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            color: #7f8c8d;
+            border-top: 1px solid #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Fundamentals Homework</h1>
+    
+    <h2>Assignment: Build a Mini Site</h2>
+    <p style="font-size: 1.1rem; font-style: italic; text-align: center; color: #7f8c8d;">
+        Demonstrate inline, internal, and external CSS with cascade and specificity
+    </p>
+    
+    <div class="goal">
+        <h2 style="margin-top: 0; color: #27ae60;">🎯 Goal</h2>
+        <p>Create a simple two-page site and style it three ways. You will write semantic HTML, apply inline CSS on specific elements, add an internal style block, and link to an external stylesheet. You will also demonstrate the cascade and specificity.</p>
+    </div>
+    
+    <div class="what-you-build">
+        <h2 style="margin-top: 0; color: #f39c12;">📝 What You Will Build</h2>
+        <p>A mini site with two pages:</p>
+        
+        <ul class="pages-list">
+            <li><strong>index.html</strong> as the home page</li>
+            <li><strong>about.html</strong> as a second page</li>
+        </ul>
+        
+        <p style="margin-top: 1rem;"><strong>Also include:</strong> <code>styles.css</code> as your external stylesheet.</p>
+    </div>
+    
+    <div class="folder-structure">
+        <h2 style="margin-top: 0; color: #2980b9;">📁 Folder Structure</h2>
+        <pre>
+project-root/
+├─ index.html
+├─ about.html
+└─ styles.css
+        </pre>
+    </div>
+    
+    <div class="requirements">
+        <h2 style="margin-top: 0; color: #2980b9;">✅ Requirements</h2>
+        <ul>
+            <li><strong>Semantic HTML:</strong> Use proper elements like &lt;header&gt;, &lt;main&gt;, &lt;section&gt;, &lt;address&gt;</li>
+            <li><strong>Inline CSS:</strong> Apply <code>style=</code> attributes to specific elements (highest priority)</li>
+            <li><strong>Internal CSS:</strong> Include &lt;style&gt; blocks in the &lt;head&gt; of each HTML file (page-specific)</li>
+            <li><strong>External CSS:</strong> Create <code>styles.css</code> linked to both pages (site-wide consistency)</li>
+            <li><strong>Cascade Demonstration:</strong> Show how inline overrides internal, which overrides external</li>
+            <li><strong>Specificity:</strong> Use classes, IDs, and element selectors to show CSS priority</li>
+            <li><strong>Responsive Design:</strong> Include media queries in external CSS</li>
+        </ul>
+    </div>
+    
+    <div class="cascade-demo">
+        <h3>🎨 The Cascade Showdown</h3>
+        <p>Watch CSS rules fight for control:</p>
+        
+        <div class="priority-list">
+            <p><strong>CSS Priority Order:</strong></p>
+            <ol>
+                <li><strong>Inline CSS</strong> (<code>style="color: red;"</code>) - Wins every time</li>
+                <li><strong>Internal CSS</strong> (&lt;style&gt; in &lt;head&gt;) - Overrides external</li>
+                <li><strong>External CSS</strong> (<code>styles.css</code>) - Foundation for both pages</li>
+            </ol>
+        </div>
+        
+        <p style="margin-top: 1rem; font-style: italic; color: #c0392b;">
+            <strong>Pro Tip:</strong> Test by changing the same property (like <code>color</code>) in all three places—inline always wins!
+        </p>
+    </div>
+    
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center;">
+        <h2 style="margin-top: 0; color: white;">🚀 Deliverables</h2>
+        <p style="font-size: 1.1rem; margin: 0;">
+            Submit your <code>project-root</code> folder with all three files. 
+            Make sure both pages link to each other and demonstrate all three CSS types!
+        </p>
+    </div>
+    
+    <footer>
+        <p>Due: Next Class | Points: 100 | Have fun building!</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+            💡 <strong>Questions?</strong> Ask during office hours or on the class forum.
+        </p>
+    </footer>
+</body>
+</html>

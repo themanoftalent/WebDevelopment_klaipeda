@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline vs Internal vs External CSS</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Internal styles for the demo -->
+  <style>
+    h2 {
+      background-color: yellow;
+      padding: 0.5rem 0.75rem;
+      border-radius: 8px;
+    }
+    p.note {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Placement of CSS</h1>
+
+  <h2>Internal styles at work</h2>
+  <p class="note">This paragraph is italic due to internal CSS in the head.</p>
+
+  <h3 style="color: green; text-decoration: underline;">
+    Inline style on this h3
+  </h3>
+
+  <p>External CSS from <span class="code">styles.css</span> controls base fonts, colors and spacing.</p>
+
+  <h2>Cascade test</h2>
+  <p>Add or change rules in <span class="code">styles.css</span> and refresh to see which rule wins.</p>
+
+  <p class="footer-note">This page mixes all three: inline, internal, external.</p>
+</body>
+</html>
